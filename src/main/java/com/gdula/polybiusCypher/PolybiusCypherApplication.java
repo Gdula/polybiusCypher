@@ -8,6 +8,7 @@ public class PolybiusCypherApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PolybiusCypherApplication.class, args);
+
 	}
 
 }

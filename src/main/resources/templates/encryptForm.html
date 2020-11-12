@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Polybius Cypher</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+
+<form method="POST" th:action="@{/encrypt}" th:object="${wordToBeEncrypted}">
+    <h1>Polybius Cipher generator</h1>
+
+    <h3>Podaj słowo do zamiany</h3>
+    <label for="word">Słowo do zamiany: </label>
+    <input type="text" th:field="*{word}"/>
+    <br/>
+
+
+    <input type="submit" value="Zamień słowo"/>
+</form>
+</body>
+</html>

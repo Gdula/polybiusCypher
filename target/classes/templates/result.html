@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Polybius Cypher</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+
+<h1>Rezultat</h1>
+<p th:text="'Zamienione słowo: ' + ${encryptedWord}"></p>
+
+</body>
+</html>
